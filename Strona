@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firma Ubuntu Server</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Us1/0FJNK+fg/bVlVsC4BO7CGS4Mm/Q0kGvX3rxccwyMuk/CnLW4kbLnU3IXSqVOu8epNNy0A2QoQpmn+4zUJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.jpg" alt="Logo Firma Ubuntu Server" id="company-logo">
+            <h1>Firma Ubuntu Server</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Usługi</a></li>
+                    <li><a href="#about">O nas</a></li>
+                    <li><a href="#team">Nasz Zespół</a></li>
+                    <li><a href="#guest">Gość Etapu Projektu</a></li>
+                    <li><a href="#project">Etap Projektu</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+   <div class="login-icon">
+                <!-- Icon for login -->
+                <a href="#loginModal" title="Logowanie" aria-label="Logowanie">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+         <div id="loginModal" style="display:none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);">
+        <div style="background: white; margin: 15% auto; padding: 20px; width: 30%; border-radius: 8px;">
+            <span class="close-modal" style="float: right; cursor: pointer;">&times;</span>
+            <h2>Logowanie</h2>
+            <form action="/login" method="post">
+                <label for="username">Użytkownik:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Hasło:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Zaloguj się</button>
+            </form>
+        </div>
+    </div>
+
+
+    <section id="services">
+        <div class="container">
+         
+            <p>
+            
+                <section id="services">
+                    <div class="container">
+                        <h2>Nasze Usługi</h2>
+                        <div class="service-cards">
+                            <div class="service-card">
+                                <img src="konfiguracja.jpg" alt="Ikona serwera">
+                                <h3>Konfiguracja serwera</h3>
+                                <p>Zapewniamy kompleksową konfigurację serwera Ubuntu, aby spełnić indywidualne potrzeby klienta.</p>
+                                <a href="#" class="btn">Dowiedz się więcej</a>
+                            </div>
+                            <div class="service-card">
+                                <img src="monitorowanie.jpg" alt="Ikona monitorowania">
+                                <h3>Zarządzanie i monitorowanie</h3>
+                                <p>Oferujemy usługi zarządzania i monitorowania serwerów Ubuntu, aby zapewnić ciągłą dostępność i wydajność Twojej infrastruktury.</p>
+                                <a href="#" class="btn">Dowiedz się więcej</a>
+                            </div>
+                            <div class="service-card">
+                                <img src="backup.jpg" alt="Ikona backupu">
+                                <h3>Backup i odzyskiwanie danych</h3>
+                                <p>Nasza firma oferuje kompleksowe rozwiązania backupu i odzyskiwania danych dla serwerów Ubuntu.</p>
+                                <a href="#" class="btn">Dowiedz się więcej</a>
+                            </div>
+                            <div class="service-card">
+                                <img src="zabezpieczenie.jpg" alt="Ikona bezpieczeństwa">
+                                <h3>Bezpieczeńwo i audyty</h3>
+                                <p>Świadczymy usługi zabezpieczenia serwerów Ubuntu, w tym audyty bezpieczeństwa i wdrażanie polityk bezpieczeństwa.</p>
+                                <a href="#" class="btn">Dowiedz się więcej</a>
+                            </div>
+                            <div class="service-card">
+                                <img src="migracja.jpg" alt="Ikona migracji">
+                                <h3>Migracje i aktualizacje</h3>
+                                <p>Pomagamy w migracjach z innych systemów na Ubuntu Server oraz zapewniamy regularne aktualizacje oprogramowania i systemu operacyjnego.</p>
+                                <a href="#" class="btn">Dowiedz się więcej</a>
+                            </div>
+                            <div class="service-card">
+                                <img src="tech.jpg" alt="Ikona wsparcia technicznego">
+                                <h3>Wsparcie techniczne</h3>
+                                <p>Nasz zespół inżynierów i specjalistów zapewnia ciągłe wsparcie techniczne dla Twojej infrastruktury opartej na Ubuntu Server.</p>
+                                <a href="#" class="btn">Dowiedz się więcej</a>
+                            </div>
+                            <!-- Dodaj więcej kafelków usług poniżej -->
+                            <div class="service-card">
+                                <img src="konsultacja.jpg" alt="Ikona konsultacji">
+                                <h3>Konsultacje i doradztwo</h3>
+                                <p>Oferujemy konsultacje i doradztwo w zakresie implementacji i utrzymania infrastruktury opartej na serwerach Ubuntu.</p>
+                                <a href="#" class="btn">Dowiedz się więcej</a>
+                            </div>
+                            <div class="navigation">
+                                <button class="prev" onclick="prevService()">&#10094;</button>
+                                <button class="next" onclick="nextService()">&#10095;</button>
+                            </div>
+                        
+                        </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </p>
+        </div>
+    </section>
+
+    <section id="about"class="hidden">
+        <div class="container">
+            <h2>O Nas</h2>
+            <p>
+                Jesteśmy innowacyjną firmą IT specjalizującą się w projektowaniu, wdrażaniu i utrzymaniu rozwiązań opartych na systemie Ubuntu Server. Nasza misja to zapewnienie naszym klientom niezawodnych i wydajnych rozwiązań IT, które przynoszą realne korzyści biznesowe.
+<h2>Dlaczego My?</h2>
+
+<h3>Doświadczenie: Posiadamy bogate doświadczenie w projektowaniu i wdrażaniu rozwiązań opartych na Ubuntu Server dla różnych branż i skal biznesowych.</h3>
+
+<h3>Kompetencje: Nasz zespół składa się z wykwalifikowanych specjalistów z certyfikatami i licznymi osiągnięciami w dziedzinie Ubuntu Server.</h3>
+
+<h3>Innowacje: Śledzimy najnowsze trendy i technologie, aby dostarczać naszym klientom najbardziej innowacyjne i efektywne rozwiązania.</h3>
+
+<h2>Skontaktuj się z nami już dziś, aby poznać pełną gamę naszych usług i rozpocząć współpracę!</h2>
+            </p>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <h2>Nasz Zespół</h2>
+            <section id="team">
+                <div class="container">
+                    
+                    <div class="team-member">
+                        <img src="patryk.jpg" alt="Zdjęcie pracownika">
+                        <h3>Papryk Bobarcha</h3>
+                        <p>Starszy Specialista  IT</p>
+                        <p>Numer telefonu: 123-456-789</p>
+                        <p>Adres: ul. Przykładowa 123, 00-000 Miasto</p>
+                        <br></br>
+                        <a href="subpage.html" class="btn more-info">Więcej Informacji</a>
+                    </div>
+                    <div class="team-member">
+                        <img src="smolar.jpg" alt="Zdjęcie pracownika">
+                        <h3>Kakub Smolar</h3>
+                        <p>Bezdomny </p>
+                        <p>Numer telefonu: 123-456-789</p>
+                        <p>Adres: ul. Przykładowa 123, 00-000 Miasto</p>
+                        <br></br>
+                        <a href="subpage1.html" class="btn more-info">Więcej Informacji</a>
+                    </div>
+                    <!-- Dodaj więcej pracowników w podobny sposób -->
+                </div>
+            </section>
+            
+    </section>
+
+    <section id="guest">
+    <div class="container">
+        <h2>Gość Etapu Projektu</h2>
+        <div class="guest-list">
+            <div class="guest">
+                <img src="bill.jpg" alt="Bill Gates">
+                <h3>Bill Gates</h3>
+                <p>Założyciel firmy Microsoft, znany z rewolucji w dziedzinie technologii informatycznych.</p>
+            </div>
+            <div class="guest">
+                <img src="elon.jpg" alt="Elon Musk">
+                <h3>Elon Musk</h3>
+                <p>Założyciel i CEO firm takich jak SpaceX, Tesla, Neuralink i The Boring Company, znany z innowacyjnych projektów w dziedzinie technologii.</p>
+            </div>
+            <div class="guest">
+                <img src="tim.jpg" alt="Tim Cook">
+                <h3>Tim Cook</h3>
+                <p>Obecny CEO firmy Apple, który kontynuuje dziedzictwo Steve'a Jobsa w kierowaniu jedną z najbardziej wpływowych firm technologicznych na świecie.</p>
+            </div>
+            <div class="guest">
+                <img src="saty.jpg" alt="Satya Nadella">
+                <h3>Satya Nadella</h3>
+                <p>Obecny CEO firmy Microsoft, który wprowadził nowe podejście do zarządzania i rozwoju firmy, skupiając się na chmurze i usługach.</p>
+            </div>
+            <div class="guest">
+                <img src="mark.jpg" alt="Mark Zuckerberg">
+                <h3>Mark Zuckerberg</h3>
+                <p>Założyciel i CEO Facebooka, który odegrał kluczową rolę w rozwoju mediów społecznościowych i komunikacji online.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <section id="project">
+    <div class="container">
+        <h2>Etap Projektu</h2>
+        <div class="project-stage-grid">
+            <div class="project-stage">
+                <div class="stage-icon">
+                    <i class="fas fa-tasks"></i> <!-- Font Awesome ikona -->
+                </div>
+                <div class="stage-details">
+                    <img src="planowanie.jpg" alt="Planowanie">
+                    <h3>Etap 1: Planowanie</h3>
+                    <p>Opis etapu planowania lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et odio sit amet sapien rhoncus aliquam eget nec urna.</p>
+                    <div class="stage-footer">
+                        <a href="etap1.txt" download class="download-btn">Pobierz etap jako plik tekstowy</a>
+                        <span class="status"><span class="indicator"></span>Status: W trakcie</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-stage">
+                <div class="stage-icon">
+                    <i class="fas fa-code"></i> <!-- Font Awesome ikona -->
+                </div>
+                <div class="stage-details">
+                    <img src="imple.jpg" alt="implementacja">
+                    <h3>Etap 2: Implementacja</h3>
+                    <p>Opis etapu implementacji lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et odio sit amet sapien rhoncus aliquam eget nec urna.</p>
+                    <div class="stage-footer">
+                        <a href="etap2.txt" download class="download-btn">Pobierz etap jako plik tekstowy</a>
+                        <span class="status"><span class="indicator"></span>Status: Zakończony</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-stage">
+                <div class="stage-icon">
+                    <i class="fas fa-check"></i> <!-- Font Awesome ikona -->
+                </div>
+                <div class="stage-details">
+                    <img src="testowanie.jpg" alt="testowanie">
+                    <h3>Etap 3: Testowanie</h3>
+                    <p>Opis etapu testowania lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et odio sit amet sapien rhoncus aliquam eget nec urna.</p>
+                    <div class="stage-footer">
+                        <a href="etap3.txt" download class="download-btn">Pobierz etap jako plik tekstowy</a>
+                        <br></br>
+                        <span class="status"><span class="indicator"></span>Status: W trakcie</span>
+                    </div>
+                </div>
+            </div>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Us1/0FJNK+fg/bVlVsC4BO7CGS4Mm/Q0kGvX3rxccwyMuk/CnLW4kbLnU3IXSqVOu8epNNy0A2QoQpmn+4zUJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+            <!-- Dodaj więcej etapów projektu w podobny sposób -->
+        </div>
+    </div>
+</section>
+<section id="partners">
+    <div class="container">
+        <h2>Nasi Partnerzy</h2>
+        <div class="partners-grid">
+            <div class="partner" style="--animation-order: 2;">
+                <img src="red.jpg" alt="Red Hat Logo">
+                <p>Red Hat</p>
+            </div>
+            <div class="partner"style="--animation-order: 1;">
+                <img src="docker.jpg" alt="Docker Logo">
+                <p>Docker</p>
+            </div>
+            <div class="partner"style="--animation-order: 2;">
+                <img src="aws.jpg" alt="AWS Logo">
+                <p>Amazon Web Services (AWS)</p>
+            </div>
+            <div class="partner"style="--animation-order: 1;">
+                <img src="google.jpg" alt="Google Cloud Logo">
+                <p>Google Cloud</p>
+            </div>
+            <div class="partner"style="--animation-order: 2;">
+                <img src="mic.jpg" alt="Microsoft Azure Logo">
+                <p>Microsoft Azure</p>
+            </div>
+            <!-- More partners here -->
+        </div>
+    </div>
+</section>
+
+
+<section id="contact">
+    <div class="container">
+        <h2>Kontakt</h2>
+        <div class="contact-options">
+            <div class="contact-details">
+                <h3>Skontaktuj się z nami!</h3>
+                <p>Telefon: 123-456-789</p>
+                <p>Email: kontakt@firmaservers.pl</p>
+                <p>Adres: Ul. Serwerowa 10, 00-001 Warszawa</p>
+                <h3>Godziny otwarcia:</h3>
+                <p>Poniedziałek - Piątek: 9:00 - 17:00</p>
+                <p>Sobota - Niedziela: Zamknięte</p>
+                <h3>Śledź nas:</h3>
+                <p>
+                    <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+                </p>
+            </div>
+            <div class="contact-form">
+                <h3>Formularz kontaktowy:</h3>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Imię i nazwisko:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Wiadomość:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Wyślij wiadomość</button>
+                </form>
+            </div>
+        </div>
+        <div class="contact-map">
+            <h3>Znajdź nas na mapie:</h3>
+            <!-- Tutaj można umieścić osadzoną mapę, np. z Google Maps -->
+            <iframe src="https://maps.google.com/maps?q=Ul.%20Serwerowa%2010,%2000-001%20Warszawa&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Firma Ubuntu Server. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var loginIcon = document.querySelector('.login-icon a');
+            var closeModal = document.querySelector('.close-modal');
+            var loginModal = document.getElementById('loginModal');
+
+            loginIcon.addEventListener('click', function(event) {
+                event.preventDefault();
+                loginModal.style.display = 'block';
+            });
+
+            closeModal.addEventListener('click', function() {
+                loginModal.style.display = 'none';
+            });
+        });
+    </script>
+    <script src="skrypt.js"></script>
+</body>
+</html>
